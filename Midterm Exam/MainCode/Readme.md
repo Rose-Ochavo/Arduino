@@ -1,3 +1,9 @@
+<p align="center">
+<img src="https://github.com/alrose102318/Arduino/blob/0e10c2db3a7de3cfd0e525d633dec6453056e594/Midterm%20Exam/MainCode/main%20diagram.jpg" width="800" height="500">
+</p>
+
+
+
 ```
 //L298n
 const int ena = 5;
