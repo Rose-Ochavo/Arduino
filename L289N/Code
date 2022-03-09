@@ -1,0 +1,30 @@
+const int in1 = 2;
+const int in2 = 3;
+const int in3 = 4;
+const int in4 = 5;
+
+void setup() {
+  delay(2000);
+}
+
+void loop() {
+  forwardRun();
+  delay(5000);
+  
+  backwardRun();
+  delay(5000);
+}
+
+void backwardRun() {
+  digitalWrite(in1 , HIGH);
+  digitalWrite(in2 , LOW);
+  digitalWrite(in3 , HIGH);
+  digitalWrite(in4 , LOW);
+}
+
+void forwardRun() {
+  digitalWrite(in1 , LOW);
+  digitalWrite(in2 , HIGH);
+  digitalWrite(in3 , LOW);
+  digitalWrite(in4 , HIGH);
+}
