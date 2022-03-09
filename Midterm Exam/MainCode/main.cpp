@@ -1,3 +1,4 @@
+//L298n
 const int ena = 5;
 const int in1 = 6;
 const int in2 = 7;
@@ -5,11 +6,12 @@ const int in3 = 8;
 const int in4 = 9;
 const int enb = 10;
 
-const int LMost = 2;
-const int L1 = 3;
-const int Mid = 13;
-const int R2 = 4;
-const int RMost = 5;
+//IR
+const int LMost = A0;
+const int L1 = A1;
+const int Mid = A2;
+const int R2 = A3;
+const int RMost = A4;
 
 void setup() {
 	pinMode(LMost, INPUT);
