@@ -4,7 +4,7 @@
 <img src="https://github.com/alrose102318/Arduino/blob/5a7a3f8fcd3adb9554522212b42bd2a89dd7f8c0/Push%20Button/diagram.jpg" width="800" height="500">
 </p>
 
-> Code
+> **Code**
 
 ```
 int pinButton = 8;
