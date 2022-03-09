@@ -1,6 +1,7 @@
 <p align="center">
 <img src="https://github.com/alrose102318/Arduino/blob/85566c54465145e10427969d50c162e8a678c4c6/IR/3%20.jpg" width="800" height="500">
 </p>
+
 ```
 const int sensorLeftMost = 2;
 const int s1 = 3;
@@ -49,5 +50,4 @@ void loop() {
   Serial.println("");
   delay(2000);
 }
-
 ```
