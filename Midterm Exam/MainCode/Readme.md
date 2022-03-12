@@ -54,7 +54,7 @@ void loop() {
 	if((digitalRead(L1) == 1) && (digitalRead(RMost) == 0)) {//HardLeft
 		HLeft();
 	}
-	if((digitalRead(LMost == 0)) && (digitalRead(L1 == 0)) && (digitalRead(Mid == 0)) && (digitalRead(R2 == 0)) && (digitalRead(RMost == 0))) {//ForwardMaxSpeed
+	if((digitalRead(LMost == 0)) && (digitalRead(L1 == 0)) && (digitalRead(Mid == 0)) && (digitalRead(R2 == 0)) && (digitalRead(RMost == 0))) {//Stop
 		Stop();
 	}
 }
