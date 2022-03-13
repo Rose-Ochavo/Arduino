@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/alrose102318/Arduino/blob/0e10c2db3a7de3cfd0e525d633dec6453056e594/Midterm%20Exam/MainCode/main%20diagram.jpg" width="800" height="500">
+<img src="https://github.com/alrose102318/Arduino/blob/e0c5a193aee15320345ab7154d58e815479227ab/Midterm%20Exam/MainCode/main%20diagram.jpg" width="800" height="500">
 </p>
 
 
