@@ -1,29 +1,28 @@
-int led_pin = 6;
-int P_button = 3;
+int state = 0;
+int Pbutton = 8;
+int led = 3;
 
-void setup(){
-  pinMode(led_pin, OUTPUT);
-  pinMode(P_button, INPUT);
+void setup()
+{
+  pinMode(Pbutton, INPUT);
+  pinMode(led, OUTPUT);
 }
 
-void loop(){
-  int state = 0;
-
-  if (digitalRead(P_button) == HIGH){
-    for(int i = state; i < 255; i++){
-      analogWrite(led_pin, i);
+void loop()
+{
+  if (digitalRead(Pbutton) == HIGH) {
+    if (state != 255) {
       state++;
-      delay(5);
-      break;
+      delay(30); 
     }
+    analogWrite(led, state);
   }
 
-  if (digitalRead(P_button) == LOW){
-    for(int i = state; i > 0; i--){
-      analogWrite(led_pin, i);
+  if (digitalRead(Pbutton) == LOW) {
+    if (state != 0) {
       state--;
-      delay(5);
-      break;      
+      delay(30);
     }
+    analogWrite(led, state);    
   }
 }
