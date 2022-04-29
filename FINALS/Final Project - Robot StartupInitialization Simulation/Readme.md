@@ -1,4 +1,4 @@
-> Code
+> Servo Code
 
 ```
 #include <Servo.h>
