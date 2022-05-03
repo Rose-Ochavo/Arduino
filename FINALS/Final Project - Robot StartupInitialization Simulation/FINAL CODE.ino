@@ -2,8 +2,8 @@
 
 Servo servoPin;
 
-const byte trigger_pin = A1;
-const byte echo_pin = A2;
+const byte trigger_pin = A0;
+const byte echo_pin = A1;
 
 long distance;
 
