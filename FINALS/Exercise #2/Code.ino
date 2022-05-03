@@ -12,7 +12,7 @@ void loop()
 {
   if (digitalRead(Pbutton) == HIGH) {
     if (state != 255) {
-      state+=5;
+      state+=3;
       delay(30); 
     }
     analogWrite(led, state);
@@ -20,7 +20,7 @@ void loop()
 
   if (digitalRead(Pbutton) == LOW) {
     if (state != 0) {
-      state-=5;
+      state-=3;
       delay(30);
     }
     analogWrite(led, state);    
