@@ -13,7 +13,7 @@ void setup() {
   pinMode(trigger_pin, OUTPUT); 
 
   servoPin.attach(9, 500, 2500);
-  // servoPin.write(90);
+   servoPin.write(90);
   delay(1000);  
 }
 
@@ -36,8 +36,5 @@ void loop() {
 
     servoPin.write(90);
     delay(1000);
-  }
-  else{
-    servoPin.write(90);
   }
 }
