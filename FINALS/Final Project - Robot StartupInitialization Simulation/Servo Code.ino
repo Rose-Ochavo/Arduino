@@ -1,21 +1,20 @@
 #include <Servo.h>
 
-Servo servopin;
-int pos;
+Servo servoPin;
 
-void setup(){
-  servopin.attach(8);
+void setup() {
+  servoPin.attach(9, 500, 2500);
+  servoPin.write(90);
+  delay(1000);  
 }
 
-void loop(){
+void loop() {
+  servoPin.write(180);    
+  delay(1000);
 
-  for(pos = 0; pos != 180; pos++){
-    servopin.write(pos);
-    delay(15);
-  }
-  
-  for(pos = 180; pos != 0; pos--){
-    servopin.write(pos);
-    delay(15);
-  }
+  servoPin.write(0);
+  delay(1000);
+
+  servoPin.write(90);
+  delay(1000);
 }
