@@ -78,7 +78,7 @@ void TLeft(){
 	digitalWrite(in2,LOW);
 
 	digitalWrite(in3,LOW);
-	digitalWrite(in4,HIGH);
+	digitalWrite(in4,LOW);
 }
 
 void Stop(){
