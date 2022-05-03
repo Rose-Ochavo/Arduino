@@ -1,7 +1,7 @@
 const byte trigger_pin = A1;
 const byte echo_pin = A0;
 
-long duration;
+long distance;
 
 void setup() {
   Serial.begin(9600);
@@ -15,8 +15,8 @@ void loop() {
   delay(10);
   digitalWrite(trigger_pin, LOW);
 
-  duration = pulseIn(echo_pin, HIGH);
+  distance = pulseIn(echo_pin, HIGH);
 
-  Serial.println(duration);
+  Serial.println(distance);
   delay(100);
 }
