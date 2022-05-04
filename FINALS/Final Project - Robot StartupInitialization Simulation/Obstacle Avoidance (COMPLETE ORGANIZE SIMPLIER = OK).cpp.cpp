@@ -30,11 +30,11 @@ void setup() {
 }
 
 void loop() {
-//     Ping();   
-//     leftState = pulseIn(echo_pin, HIGH);
+    Ping();   
+    leftState = pulseIn(echo_pin, HIGH);
 
-//     Ping();    
-//     rightState = pulseIn(echo_pin, HIGH);
+    Ping();    
+    rightState = pulseIn(echo_pin, HIGH);
 
     Ping();
     distance = pulseIn(echo_pin, HIGH);
