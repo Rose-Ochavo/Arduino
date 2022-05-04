@@ -63,11 +63,11 @@ void loop() {
       Ping();
       distance = pulseIn(echo_pin, HIGH);
 
-//       Ping();
-      leftState = 0//pulseIn(echo_pin, HIGH);
+      Ping();
+      leftState = pulseIn(echo_pin, HIGH);
 
-//       Ping();
-      rightState = 0//pulseIn(echo_pin, HIGH);
+      Ping();
+      rightState = pulseIn(echo_pin, HIGH);
   }
 
   if(leftState > rightState){   
