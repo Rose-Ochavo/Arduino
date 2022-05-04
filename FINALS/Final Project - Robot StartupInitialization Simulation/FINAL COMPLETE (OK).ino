@@ -14,7 +14,7 @@ void setup() {
   pinMode(13, OUTPUT);
 
   servoPin.attach(9, 500, 2500);
-  servoPin.write(90);
+  servoPin.write(90);//100
   delay(1000);  
 }
 
@@ -31,13 +31,13 @@ void loop() {
   if(distance <= 300){
     digitalWrite(13, HIGH);
 
-    servoPin.write(180);  
+    servoPin.write(180);//155
     delay(1000);
 
-    servoPin.write(0);
+    servoPin.write(0);35
     delay(1000);
 
-    servoPin.write(90);
+    servoPin.write(90);//100
     delay(1000);
   }else{
     digitalWrite(13, LOW);
