@@ -86,15 +86,19 @@ void loop() {
         rightState = pulseIn(echo_pin, HIGH);
   }
 
-  if(leftState <= 5000){   
+  if(leftState > rightState){   
     moveRight();
     delay(700);
   } 
-
-  if(rightState <= 5000){   
+  else{   
     moveLeft();   
-    delay(50);
+    delay(700);
   }
+
+//   if(rightState <= 5000){   
+//     moveLeft();   
+//     delay(700);
+//   }
 }
 
 void stopMotor1(){
