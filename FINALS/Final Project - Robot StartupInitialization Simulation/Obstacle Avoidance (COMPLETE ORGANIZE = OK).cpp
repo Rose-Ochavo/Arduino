@@ -30,15 +30,15 @@ void setup() {
 }
 
 void loop() {
-//     digitalWrite(trigger_pin, HIGH);
-//     delay(10);
-//     digitalWrite(trigger_pin, LOW);    
-//     leftState = pulseIn(echo_pin, HIGH);
+    digitalWrite(trigger_pin, HIGH);
+    delay(10);
+    digitalWrite(trigger_pin, LOW);    
+    leftState = pulseIn(echo_pin, HIGH);
 
-//     digitalWrite(trigger_pin, HIGH);
-//     delay(10);
-//     digitalWrite(trigger_pin, LOW);    
-//     rightState = pulseIn(echo_pin, HIGH);
+    digitalWrite(trigger_pin, HIGH);
+    delay(10);
+    digitalWrite(trigger_pin, LOW);    
+    rightState = pulseIn(echo_pin, HIGH);
 
     digitalWrite(trigger_pin, HIGH);
     delay(10);
