@@ -59,20 +59,20 @@ void loop() {
     delay(1000);
   }
   
-  if(leftState > 2000 && rightState < 2000){   
+  if(leftState > rightState){   
     moveLeft();
     delay(400);
   } 
-  else if(rightState > 2000 && leftState < 2000){   
+  else if(rightState > leftState){   
     moveRight();   
     delay(400);
     rightState = 0;
     leftState = 0;    
   }
-    else if(rightState > 2000 && leftState > 2000 && distance < 1700){   
-    moveRight();   
-    delay(500);   
-  }
+  //   else if(rightState > 2000 && leftState > 2000 && distance < 1700){   
+  //   moveRight();   
+  //   delay(500);   
+  // }
 }
 
 void stopMotor1(){
